@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="https://picsum.photos/500" alt="Random Image">
+
+        <div id="message">Hello! This is a simple webpage.</div>
+
+        <button onclick="changeText()">Change Text</button>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").textContent =
+                "You clicked the button!";
+        }
+    </script>
+</body>
+</html>
